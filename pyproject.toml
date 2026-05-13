@@ -22,8 +22,9 @@ dependencies = [
 gcs = ["google-cloud-storage"]
 
 [project.urls]
-# Set this to your fork's URL once you've pushed.
-# Homepage = "https://github.com/<you>/colab_bridge"
+Homepage = "https://github.com/sam-engel/Colab-Bridge"
+Repository = "https://github.com/sam-engel/Colab-Bridge"
+Issues = "https://github.com/sam-engel/Colab-Bridge/issues"
 
 [project.scripts]
 # Registers `colab` in the env's bin dir; resolves to colab_bridge.direct_kernel._cli().
