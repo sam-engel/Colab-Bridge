@@ -1,0 +1,49 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Bridge runtime state (per-install, contains OAuth tokens & job history)
+.direct_kernel_creds.json
+.direct_kernel_notebook_id
+.direct_kernel_jobs/
+colab_bridge/.direct_kernel_creds.json
+colab_bridge/.direct_kernel_notebook_id
+colab_bridge/.direct_kernel_jobs/
+colab_bridge/.env
+
+# Service-account JSONs anywhere in the tree
+*service-account*.json
+*gc_credentials*.json
+gcs_creds.json
+
+# Python build / install artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Editor / OS junk
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
